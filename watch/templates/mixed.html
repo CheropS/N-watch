@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load bootstrap5 %}
+{% load static %}
+
+{% block content%}
+{{ block.super }}
+<div class="container-fluid m-5">
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="card">
+                <div class="card-title" style="font-size: larger; text-align: center;">Water Drops</div> 
+                <img src="https://scontent.fmba5-1.fna.fbcdn.net/v/t39.30808-6/211960771_552072796204584_3238882175888022843_n.jpg?_nc_cat=101&ccb=1-5&_nc_sid=8bfeb9&_nc_eui2=AeGAC69TGHGzC8x1QG0VY6cHCpWWdc5CFoEKlZZ1zkIWgWI1IUfYPLNXHFGAKRxZEOgj7n6RCmabVsKYE2HJVu8M&_nc_ohc=HVg6FozO8kEAX-0v1Hs&tn=v5d3KWg7c9Hud5q5&_nc_pt=5&_nc_ht=scontent.fmba5-1.fna&oh=d1056a463d36db5bf10335675eec9725&oe=6182FB8A" alt="water">
+            </div>
+        </div>
+        <div class="col">
+                <div class="card">
+                    <div class="card-title" style="font-size: larger; text-align: center;">Mwangi's Grocery Store</div>
+                    <img src="https://images.unsplash.com/photo-1583258292688-d0213dc5a3a8?ixid=MnwxMjA3fDB8MHxzZWFyY2h8MXx8Z3JvY2VyeSUyMHN0b3JlfGVufDB8fDB8fA%3D%3D&ixlib=rb-1.2.1&w=1000&q=80" alt="">
+                </div> <br>
+        </div> 
+        <div class="col">
+            <div class="card">
+                <div class="card-title" style="font-size: larger; text-align: center;">Cyber cafe</div>
+                <img src="https://1.bp.blogspot.com/-lRzgCaeQgao/XxadJV7sRhI/AAAAAAAAUNY/kfyb4_U6AA8dlA8PKMajSNp7eeV9AagYACLcBGAsYHQ/s664/CyberCafe.jpg" alt="">
+            </div> <br>
+        </div> 
+
+        <div class="col">
+            <div class="card">
+                <div class="card-title" style="font-size: larger; text-align: center;">Mama Gas</div>
+                <img src="https://www.mamagas.co.ke/wp-content/uploads/2019/08/kgas-13kg.jpg" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
