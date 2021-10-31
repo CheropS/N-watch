@@ -1,0 +1,37 @@
+{% extends "base.html" %}
+{% load bootstrap5 %}
+{% load static %}
+
+{% block content%}
+{{ block.super }}
+<div class="container-fluid m-5">
+    <div class="row row-cols-2">
+        <div class="col">
+            <div class="card">
+                <div class="card-title" style="font-size: larger; text-align: center;">Tulewe wines</div> 
+                <img src="https://www.wtso.com/blog/wp-content/uploads/2021/02/shutterstock_600576665.jpg" alt="cake shop">
+            </div>
+        </div>
+        <div class="col">
+                <div class="card">
+                    <div class="card-title" style="font-size: larger; text-align: center;">Sharry's Wine Parlour</div>
+                    <img src="https://europa.eu/food-match-japan/sites/default/files/2019-11/gen-content-bloc_1272x720_wine-kampai-cheers-sante_1028944548.jpg" alt="">
+                </div> <br>
+        </div> 
+        <div class="col">
+            <div class="card">
+                <div class="card-title" style="font-size: larger; text-align: center;">Cakes and Wine</div>
+                <img src="https://www.authenticvision.com/wp-content/uploads/2019/07/winesspirits_1200.jpg" alt="">
+            </div> <br>
+        </div> 
+
+        <div class="col">
+            <div class="card">
+                <div class="card-title" style="font-size: larger; text-align: center;">BricksField</div>
+                <img src="https://images.squarespace-cdn.com/content/v1/544598ade4b06ae7933812d2/1423243160768-2WIYOOLOUH9X4NTPS92S/IMG_4921.jpg?format=1000w" alt="">
+            </div>
+        </div>
+    </div>
+
+</div>
+{% endblock %}
