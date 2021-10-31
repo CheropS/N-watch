@@ -7,6 +7,8 @@ def home(request):
 
 def business(request):
     return render(request, 'business.html')
-    
+
 def wines(request):
     return render(request, 'wines.html')
+def mixed(request):
+    return render(request, 'mixed.html')
