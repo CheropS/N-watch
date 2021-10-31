@@ -20,3 +20,6 @@ li{
 h3{
     color: yellow;
 }
+.container-fluid{
+    width: 95%;
+}

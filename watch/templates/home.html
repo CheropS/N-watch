@@ -4,10 +4,10 @@
 
 {% block content %}
 {{block.super}}
-<div class="container m-5" style="background-color: black;">
+<div class="container-fluid m-5" style="background-color: black;">
     <div class="row">
         <div class="col">
-            <h3 style="text-align: center;">Businesses in my Hood</h3>
+            <h3 style="text-align: center;" class="m-3">Businesses in my Hood</h3>
             
             <div class="card" id="biz">
                 <img src="https://www.bevindustry.com/ext/resources/issues/2021/02-February/CF_Wine_E_J_Gallo_Winery_Portfolio.jpg?1612285610" alt="">
@@ -46,13 +46,16 @@
             </div>
     </div> 
     <div class="col-3">
-        <H3 style="text-align: center;">News Alert</H3>
-        <div class="card">
+        <H3 style="text-align: center;" class="m-3">News Alert</H3>
+        
+        <div class="card m-3">
+            
             <ul>
                 <li>Robbery last night</li>
                 <li>Doctor Needed</li>
             </ul>
         </div>
+        <button class="btn btn-warning" style="justify-content:center;">Report a Crime</button><br>
     </div>
     </div>
 </div>
