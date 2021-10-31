@@ -1,0 +1,31 @@
+{% extends 'base.html' %}
+{% load bootstrap5 %}
+{% load static %}
+
+{% block content %}
+{{block.super}}
+<div class="container">
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+    </div> 
+
+    <div class="row">
+        <div class="col-md-3 position-absolute top-50 start-50">
+            <h3>Contact Information</h3>
+            <div class="card">
+                <p>AA Insurance</p>
+                <p>Tel: 12345432</p>
+                <p>Aga Khan Hospital</p>
+                <p>Tel: 02065765</p>
+            </div>
+        </div>
+    </div>
+    <div class="row">
+        <div class="col-md-3">
+
+        </div>
+    </div>
+</div>
+{% endblock %}
