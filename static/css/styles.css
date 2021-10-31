@@ -1,9 +1,22 @@
-h3{
-    color: yellow;
+*{
+    font-family: 'Lobster', cursive;
 }
 .carousel{
     justify-content: center;
 }
 li{
     list-style: none;
+}
+#biz{
+    width: 400px;
+    height: 224px;
+    border: 1px solid black;
+    border-radius: 1.5px;
+}
+#biz2{
+    color: yellow;
+    text-align: center;
+}
+h3{
+    color: yellow;
 }

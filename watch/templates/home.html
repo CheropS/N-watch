@@ -4,34 +4,49 @@
 
 {% block content %}
 {{block.super}}
-<div class="container m-5">
+<div class="container m-5" style="background-color: black;">
     <div class="row">
         <div class="col">
-            <h3>Businesses in my Hood</h3>
-            <div class="card">
-                <ul>
-                    <li>Wines and Spirits</li>
-                    <li>Grocery</li>
-                    <li>Water refill</li>
-                    <li>Gas Hubs</li>
-                    <li>Cyber cafe</li>
+            <h3 style="text-align: center;">Businesses in my Hood</h3>
+            
+            <div class="card" id="biz">
+                <img src="https://www.bevindustry.com/ext/resources/issues/2021/02-February/CF_Wine_E_J_Gallo_Winery_Portfolio.jpg?1612285610" alt="">
+            </div><br><br>
+
+            <div class="card"  style="background-color: yellow;" id="biz">
+                <ul style="font-size: larger;" class="m-5">
+                    <a href=""><li>Wines and Spirits</li></a>
+                    <a href=""><li>Grocery</li></a>
+                    <a href=""><li>Water refill</li></a>
+                    <a href=""><li>Gas Hubs</li></a>
+                    <a href=""><li>Cyber cafe</li></a>
                 </ul>
+            </div><br>
+            <div class="card" id="biz">
+                <img src="https://www.thetrendspotter.net/wp-content/uploads/2021/07/Best-Cake-Shop-Sydney.jpg" alt="">
             </div>
         </div>
         <div class="col">
+            <div class="card-title m-3">
+                <h3 style="text-align: center;">What's in my Hood?</h3>
+            </div><br>
             <div class="carousel">
                 <img src="https://markuschambers.ca/wp-content/uploads/2019/06/Neighborhood-Watch.jpg" alt="" width="400px" style="align-items: center;">
-            </div>
-            <h3>Contact Information</h3>
-            <div class="card">
-                <p>AA Insurance</p>
-                <p>Tel: 12345432</p>
-                <p>Aga Khan Hospital</p>
-                <p>Tel: 02065765</p>
+            </div> <br><br>
+            <h3 style="text-align: center;">Contact Information</h3>
+            <div class="card" style="background-color: black;" id="biz2" >
+                <ul>
+                    <li><p>AA Insurance</p>
+                        <p>Tel: 12345432</p></li>
+                    <li>
+                        <p>Aga Khan Hospital</p>
+                        <p>Tel: 02065765</p>   
+                    </li>    
+                </ul>
             </div>
     </div> 
-    <div class="col-md-3">
-        <H3>News Alert</H3>
+    <div class="col-3">
+        <H3 style="text-align: center;">News Alert</H3>
         <div class="card">
             <ul>
                 <li>Robbery last night</li>
