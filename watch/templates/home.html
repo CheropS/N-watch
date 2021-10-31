@@ -4,15 +4,24 @@
 
 {% block content %}
 {{block.super}}
-<div class="container">
+<div class="container m-5">
     <div class="row">
-        <div class="col-md-3">
-
+        <div class="col">
+            <h3>Businesses in my Hood</h3>
+            <div class="card">
+                <ul>
+                    <li>Wines and Spirits</li>
+                    <li>Grocery</li>
+                    <li>Water refill</li>
+                    <li>Gas Hubs</li>
+                    <li>Cyber cafe</li>
+                </ul>
+            </div>
         </div>
-    </div> 
-
-    <div class="row">
-        <div class="col-md-3 position-absolute top-50 start-50">
+        <div class="col">
+            <div class="carousel">
+                <img src="https://markuschambers.ca/wp-content/uploads/2019/06/Neighborhood-Watch.jpg" alt="" width="400px" style="align-items: center;">
+            </div>
             <h3>Contact Information</h3>
             <div class="card">
                 <p>AA Insurance</p>
@@ -20,12 +29,16 @@
                 <p>Aga Khan Hospital</p>
                 <p>Tel: 02065765</p>
             </div>
+    </div> 
+    <div class="col-md-3">
+        <H3>News Alert</H3>
+        <div class="card">
+            <ul>
+                <li>Robbery last night</li>
+                <li>Doctor Needed</li>
+            </ul>
         </div>
     </div>
-    <div class="row">
-        <div class="col-md-3">
-
-        </div>
     </div>
 </div>
 {% endblock %}
