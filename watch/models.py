@@ -10,6 +10,12 @@ class NeighbourHood(models.Model):
 
     def create_neighbourhood(self):
         self.save()
-        
+
     def save_neighbourhood(self):
         self.save()
+    
+    def delete_neighbourhood(self):
+        self.delete()
+    @staticmethod
+    def show_all_neighbourhoods():
+        return NeighbourHood.objects.all()
