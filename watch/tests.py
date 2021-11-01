@@ -5,7 +5,12 @@ from .models import NeighbourHood
 class NeighbourHoodTestClass(TestCase):
     #set up method
     def setUp(self):
-        self.sharry=NeighbourHood(name='Muthiga Estate',location='Kinoo', occupants_count='null')
+        self.sharry=NeighbourHood(name='Muthiga Estate',location='Kinoo', occupants_count='1')
     # Testing  instance
     def test_instance(self):
         self.assertTrue(isinstance(self.sharry,NeighbourHood))
+    #testing saving method
+    def test_save_method(self):
+        self.sharry.save_neighbourhood()
+        neighbourhoods=NeighbourHood.objects.all()
+        self.assertTrue(len(neighbourhoods)> 0)

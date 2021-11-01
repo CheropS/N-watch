@@ -10,4 +10,6 @@ class NeighbourHood(models.Model):
 
     def create_neighbourhood(self):
         self.save()
-
+        
+    def save_neighbourhood(self):
+        self.save()
