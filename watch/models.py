@@ -26,9 +26,9 @@ class NeighbourHood(models.Model):
     #     self.name = value
     #     self.save_neighbourhood()
 
-    def update_occupants_count(self, value):
-        self.occupants_count=value
-        self.save_neighbourhood()
+    # def update_occupants_count(self, value):
+    #     self.occupants_count=value
+    #     self.save_neighbourhood()
 
 class User(models.Model):
     name=models.CharField(max_length=40)
