@@ -23,6 +23,15 @@ class NeighbourHoodTestClass(TestCase):
         neighbourhoods=self.sharry.show_all_neighbourhoods()
         self.assertTrue(len(neighbourhoods) ==0)
     
-   
+    #Updating neighbourhood
+    # def test_update_method(self):
+    #     self.sharry.save_neighbourhood()
+    #     self.sharry.update_neighbourhood_name('Muthiga Estate')
+    #     self.assertTrue(self.sharry.update_neighbourhood_name =='Muthiga Estate')
+
+    def test_update_method(self):
+        self.sharry.save_neighbourhood()
+        self.sharry.update_occupants_count('1')
+        self.assertTrue(self.sharry.update_occupants_count == '1')
         
 
