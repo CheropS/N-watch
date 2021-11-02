@@ -1,5 +1,5 @@
 # NeighbourHood Watch
-![screenshot](insta/static/screenshot)
+![screenshot](/media/screenshot.png)
 
 ## Description
 NeighbourHood Watch is an application that alerts a user within a certain geographical location of the news and activities within the region. Its purpose is to make neighbours to know one another and to have access to the same kind of information. A user has to log in into the application and specify the region he/she lives. They can then find businesses within the region and news alert. A user also has the chance to search and report a crime.  
@@ -7,7 +7,7 @@ NeighbourHood Watch is an application that alerts a user within a certain geogra
 ## How to Install it
 To install the application, you can clone it to your laptop and run it using python3 manage.py runserver after creating and activating a virtual environment.
 You will have to create a superuser to have access to the admin page.  
-The link to cloning it:https://github.com/CheropS/instagram-clone.git.  
+The link to cloning it:https://github.com/CheropS/N-watch.git.  
 You then run the application using your favorite code viewer. 
 
 ## How to Use it
