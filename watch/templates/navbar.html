@@ -15,5 +15,21 @@
     </div>
     <div>
         <a class="navbar-brand" href="{% url 'home' %}">NeighbourHood Watch</a>
-    </div>      
+    </div> 
+    <!--Adding login and logout function-->
+    {% if user.is_authenticated %}
+      <ul>
+        
+              <a href="/logout">Logout</a>
+            </li>
+          </ul>
+        </li>
+      </ul>
+      {% else %}
+      <li>
+        <a class='btn btn-default' href="/accounts/login">Login</a>
+      </li>
+
+      {% endif %}
+    </div>     
   </nav>

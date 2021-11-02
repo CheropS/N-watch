@@ -16,10 +16,14 @@ Including another URLconf
 from django.contrib import admin
 from django.urls import path
 from django.conf.urls import include
+from django.contrib.auth.views import LoginView, LogoutView
+from django.contrib.auth import views
 
 urlpatterns = [
     path('admin/', admin.site.urls),
     path('', include('watch.urls')),
     path('accounts/', include('django_registration.backends.one_step.urls')),
-    
+    path("logout/", LogoutView.as_view(template_name='accounts/logout.html')),
+    # path('^logout/$', views.logout, {"next_page": '/'})
+    path("accounts/login/", LoginView.as_view(template_name='accounts/login.html')),
 ]
