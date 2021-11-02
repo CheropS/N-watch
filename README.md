@@ -1,5 +1,5 @@
 # NeighbourHood Watch
-![screenshot](/media/screenshot.png)
+![screenshot](N-watch/media/screenshot.png)
 
 ## Description
 NeighbourHood Watch is an application that alerts a user within a certain geographical location of the news and activities within the region. Its purpose is to make neighbours to know one another and to have access to the same kind of information. A user has to log in into the application and specify the region he/she lives. They can then find businesses within the region and news alert. A user also has the chance to search and report a crime.  
