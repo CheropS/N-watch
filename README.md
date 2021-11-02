@@ -11,7 +11,7 @@ The link to cloning it:https://github.com/CheropS/N-watch.git.
 You then run the application using your favorite code viewer. 
 
 ## How to Use it
-You can follow the deployed link:https://instaclone010.herokuapp.com/. 
+You can follow the deployed link:https://nwatch101.herokuapp.com/. 
 A user logs into the application and creates their profile. This allows the user to add, delete, create neighbourhoods in the app. After a user is finished, he/she logs out of the application. 
 
 ## Programming Languages used
