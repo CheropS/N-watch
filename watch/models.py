@@ -37,7 +37,8 @@ class User(models.Model):
     email=models.EmailField()
 
 class Business(models.Model):
-    business_name=models.CharField(max_length=30)
+    name=models.CharField(max_length=30)
+    image=models.ImageField()
     uname=models.ForeignKey(User, on_delete=models.CASCADE)
     neighbourhood_id=models.ForeignKey(NeighbourHood, on_delete=models.CASCADE)
-    business_email=models.EmailField()
+    email=models.EmailField()

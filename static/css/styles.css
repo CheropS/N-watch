@@ -23,3 +23,7 @@ h3{
 .container-fluid{
     width: 95%;
 }
+.image-thumbail{
+    height: 400px;
+    width: 400px;
+}

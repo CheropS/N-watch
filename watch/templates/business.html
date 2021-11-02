@@ -7,30 +7,16 @@
 <div class="container-fluid m-5">
     <div class="row row-cols-2">
         <div class="col">
+            {% for business in business_list %}
             <div class="card">
-                <div class="card-title" style="font-size: larger; text-align: center;">Becky's Cake Shop</div> 
-                <img src="https://www.thetrendspotter.net/wp-content/uploads/2021/07/Best-Cake-Shop-Sydney.jpg" alt="cake shop">
+                <div class="card-title" style="font-size: larger; text-align: center;">{{ business.name }}</div> 
+                <img class="image-thumbail" src="{{ business.image.url }}" alt="" width="500px" height="500px">
+                    <p>{{ business.email }}</p>
+                    <p></p>
             </div>
         </div>
-        <div class="col">
-                <div class="card">
-                    <div class="card-title" style="font-size: larger; text-align: center;">Sharry's Pastry and Cake Shop</div>
-                    <img src="https://www.thetrendspotter.net/wp-content/uploads/2021/07/La-Renaissance-Patisserie-and-Cafe.jpg" alt="">
-                </div> <br>
-        </div> 
-        <div class="col">
-            <div class="card">
-                <div class="card-title" style="font-size: larger; text-align: center;">Cakes and Wine</div>
-                <img src="https://www.thetrendspotter.net/wp-content/uploads/2021/07/Black-Star-Pastry.jpg" alt="">
-            </div> <br>
-        </div> 
-
-        <div class="col">
-            <div class="card">
-                <div class="card-title" style="font-size: larger; text-align: center;">BricksField</div>
-                <img src="https://www.thetrendspotter.net/wp-content/uploads/2021/07/Flour-Stone.jpg" alt="">
-            </div>
-        </div>
+        {% endfor %}
+        
     </div>
 
 </div>
