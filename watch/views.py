@@ -14,5 +14,5 @@ def business(request):
 
 def wines(request):
     return render(request, 'wines.html')
-def mixed(request):
-    return render(request, 'mixed.html')
+def about(request):
+    return render(request, 'about.html')
