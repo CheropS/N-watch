@@ -1,4 +1,6 @@
 from django.db import models
+from django.dispatch import receiver
+from django.db.models.signals import post_save
 
 # Create your models here.
 
@@ -35,6 +37,21 @@ class User(models.Model):
     user_id=models.IntegerField()
     neighbourhood_id=models.ForeignKey(NeighbourHood, on_delete=models.CASCADE)
     email=models.EmailField()
+
+    def save_profile(self):
+        self.save()
+
+    def __str__(self):
+        return f'{self.user.username} User'
+
+@receiver(post_save, sender=User)
+def create_user_profile(sender, instance, created, **kwargs):
+    if created:
+        User.objects.create(user=instance)
+
+@receiver(post_save, sender=User)
+def save_user_profile(sender, instance, **kwargs):
+    instance.profile.save()
 
 class Business(models.Model):
     name=models.CharField(max_length=30)
